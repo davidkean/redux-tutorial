@@ -1,0 +1,24 @@
+.todo-list {
+   border: 1px solid rgba(0, 103, 110, 0.15);
+   border-radius: 8px;
+   box-shadow: 0px 0px 16px rgba(1, 133, 143, 0.1);
+
+   &__title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 10px;
+      color: white;
+      padding: 16px;
+      border-bottom: 1px solid rgba(0, 103, 110, 0.15);
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      background-color: #01858f;
+   }
+
+   &__input {
+      padding: 16px 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: rgb(245, 245, 245);
+   }
+}
