@@ -7,17 +7,18 @@ interface TodoInputProps {
    handleAddItem: (arg0: ITodoItem) => void;
 }
 
-export const TodoInput: React.FC<TodoInputProps> = ({ handleAddItem }) => {
+export const TodoInput: React.FC<TodoInputProps> = props => {
    const [todoText, setTodoText] = useState<string>("");
 
    const handleSubmit = () => {
-      const newTodo: ITodoItem = {
+      const newTodoItem: ITodoItem = {
          id: uuidv4(),
          text: todoText,
          completed: false
       };
 
-      handleAddItem(newTodo);
+      props.handleAddItem(newTodoItem);
+
       setTodoText("");
    };
 
